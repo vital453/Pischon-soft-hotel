@@ -1,441 +1,412 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Solution complète pour la gestion de votre hôtel." />
-        <meta name="keywords" content="gestion hôtelière, pms, channel manager, moteur de réservation, logiciel hôtel" />
-        <meta name="author" content="Pischon" />
+<html lang="fr">
 
-        <!-- Site Title -->
-        <title>Pischon Hôtel - Votre Plateforme Tout-en-Un de Gestion Hôtelière</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Solution complète pour la gestion de votre hôtel." />
+  <meta name="keywords" content="gestion hôtelière, pms, channel manager, moteur de réservation, logiciel hôtel" />
+  <meta name="author" content="Pischon" />
+  <meta name="theme-color" content="#ffffff">
 
-        <!-- Site favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <!-- Fonts du modèle Pischonsoft -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&amp;family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;family=SUSE:wght@100..800&amp;display=swap" rel="stylesheet">
 
-        <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+  <!-- Site Title -->
+  <title>Pischon Hôtel - Votre Plateforme Tout-en-Un de Gestion Hôtelière</title>
 
-        <!-- MFP Css -->
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <!-- Site favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
 
-        <!-- Material Icon -->
-        <link rel="stylesheet" type="text/css" href="assets/css/materialdesignicons.min.css" />
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 
-        <!-- Pe7 Icon -->
-        <link rel="stylesheet" type="text/css" href="assets/css/pe-icon-7.css">
+  <!-- MFP Css -->
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
 
-        <!-- Owl Slider -->
-        <link rel="stylesheet" href="assets/css/owl.carousel.css" />
-        <link rel="stylesheet" href="assets/css/owl.theme.css" />
-        <link rel="stylesheet" href="assets/css/owl.transitions.css" />
+  <!-- Material Icon -->
+  <link rel="stylesheet" type="text/css" href="assets/css/materialdesignicons.min.css" />
 
-        <!-- Custom  Css -->
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <!-- Pe7 Icon -->
+  <link rel="stylesheet" type="text/css" href="assets/css/pe-icon-7.css">
 
-    </head>    
-    <body>
+  <!-- Owl Slider -->
+  <link rel="stylesheet" href="assets/css/owl.carousel.css" />
+  <link rel="stylesheet" href="assets/css/owl.theme.css" />
+  <link rel="stylesheet" href="assets/css/owl.transitions.css" />
 
-        <!-- loader -->
-        <div class="loader-wrapper">
-            <div class="loader"></div>
+  <!-- Custom  Css -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+</head>
+
+<body>
+
+  <!-- loader -->
+  <div class="loader-wrapper" style="display: none;">
+    <div class="loader"></div>
+  </div>
+
+  <!--Navbar Start-->
+  <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
+    <div class="container">
+      <!-- LOGO -->
+      <a class="logo navbar-brand" href="index.html">
+        <img src="assets/images/logo.png" alt="" class="img-fluid logo-light">
+        <img src="assets/images/logo-dark.png" alt="" class="img-fluid logo-dark">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="mdi mdi-menu"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mx-auto navbar-center" id="mySidenav">
+          <li class="nav-item active">
+            <a href="#home" class="nav-link">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a href="#features" class="nav-link">Fonctionnalités</a>
+          </li>
+          <li class="nav-item me-3">
+            <a href="#download" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div>
+           <!-- Boutons conservés du modèle si nécessaire -->
+           <!-- <a href="#" class="btn btn-sm sign_btn btn-rounded d-block navbar-btn">Mon compte</a> -->
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <!--Start Home (Style Pischonsoft SaaS)-->
+  <section class="home-bg" id="home">
+    <div class="bg-overlay-home" style="background-image: url(assets/images/animation.png)"></div>
+    <div class="container position-relative z-index">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <div class="text-white text-center">
+            <div class="small_title">
+              <p class="mb-0 text-uppercase">
+                Pisch<span class="text-custom">o</span>n Hôtel
+              </p>
+            </div>
+            <h1 class="text-uppercase text-suse mt-4 mb-0 fw-normal">
+              Votre Plateforme Tout-en-Un de Gestion Hôtelière
+            </h1>
+            <p class="col-md-12 col-lg-10 mx-auto text-opacity-75 mx-auto pt-4 mb-0 pb-2 text-white lead">
+              Notre application a été conçue pour un pilotage efficace de toutes vos opérations. 
+              Elle intègre la gestion des réservations et des finances avec une logistique interne avancée, 
+              couvrant l'hébergement, la restauration et bien plus.
+            </p>
+
+            <div class="header_btn mt-3">
+              <a href="#download" class="btn btn-custom2 fw-bold me-3">Demander une démo</a>
+            </div>
+            <div>
+              <!-- Image centrée en bas comme sur le modèle -->
+              <img src="assets/images/home-sass.png" alt="Dashboard Hotel" class="img-fluid mx-auto home-desk d-block">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Canvas pour l'effet de particules -->
+    <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%; position: absolute; top: 0px;" width="1305" height="1248"></canvas>
+  </section>
+  <!--End Home-->
+
+  <!-- Start About (Style Pischonsoft SaaS) -->
+  <section class="section mt-md-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 order-2 order-md-1 text-center text-md-start">
+          <!-- Image illustrative à gauche -->
+          <img src="assets/images/features-1.png" alt="Logistique Hôtelière" class="rounded-2 img-fluid">
+        </div>
+        <div class="col-lg-7 mt-3 order-1 order-md-2 text-center text-md-start">
+          <h1 class="fw-bold text-suse">
+            Une Logistique Interne Avancée pour votre établissement.
+          </h1>
+
+          <h4 class="">
+            Concentrez-vous sur l'expérience client, nous gérons la complexité.
+          </h4>
+          <h5 class="text-primary mt-4">
+            Du contrôle rigoureux de l'économat jusqu'à l'alimentation précise des stocks de chaque service.
+          </h5>
+          <p>
+            Notre application couvre : L’Hébergement, La Restauration, la gestion de la piscine, la location des salles, le suivi de matériel et la gestion des stocks.
+          </p>
+          
+          <div class="row">
+            <div class="col-md-4 col-sm-6 py-2 py-md-4">
+              <h2 class="fw-bold text-suse text-warning">+100%</h2>
+              <p>Contrôle des stocks</p>
+            </div>
+            <div class="col-md-4 col-sm-6 py-2 py-md-4">
+              <h2 class="fw-bold text-suse text-secondary">360°</h2>
+              <p>Vue sur l'activité</p>
+            </div>
+            <div class="col-md-4 col-sm-6 py-2 py-md-4">
+              <h2 class="fw-bold text-suse text-primary">+Heures</h2>
+              <p>Gains de temps admin</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End About -->
+
+  <!-- Start Features (Style Pischonsoft SaaS - Grille) -->
+  <section class="section bg-primary" id="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="text-suse text-center text-uppercase fw-bold text-white mb-5">Les Fonctionnalités Clés</h2>
         </div>
 
-        <!--Navbar Start-->
-        <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
-            <div class="container">
-                <!-- LOGO -->
-                <a class="logo navbar-brand" href="index.html">
-                    <img src="assets/images/logo.png" alt="" class="img-fluid logo-light">
-                    <img src="assets/images/logo-dark.png" alt="" class="img-fluid logo-dark">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="mdi mdi-menu"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mx-auto navbar-center" id="mySidenav">
-                        <li class="nav-item active">
-                            <a href="#home" class="nav-link"><i class="mdi mdi-home-outline"></i> Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#features" class="nav-link"><i class="mdi mdi-google-circles-extended"></i> Fonctionnalités</a>
-                        </li>
-                        <li class="nav-item me-3">
-                            <a href="#download" class="nav-link"><i class="mdi mdi-progress-download"></i> Contact</a>
-                        </li>
-                    </ul>
-                    <!-- <div class="hide_phone">
-                        <a href="login.html" class="btn btn-sm log_btn">Connexion</a>
-                        <a href="signup.html" class="btn btn-sm sign_btn btn-rounded navbar-btn">Inscription</a>
-                    </div> -->
-                </div>
+        <!-- Module 1: Économat -->
+        <div class="col-md-6 col-lg-4">
+          <div class="about_boxes text-center rounded p-4 mb-4">
+            <div class="about_icon">
+              <i class="pe-7s-box2 p-icon"></i>
             </div>
-        </nav>
-        <!-- Navbar End -->
-
-        <!--Start Home-->
-        <section class="home-bg home_side_img" id="home">
-            <div class="bg-overlay-home" style="background-image: url(assets/images/animation.png);"></div>
-            <div class="container">
-                <div class="row vertical-content">
-                    <div class="col-lg-6">
-                        <div class="text-white mt-3">
-                            <div class="small_title">
-                                <p class="mb-0 text-uppercase">P<span class="text-custom">i</span>schon Hôtel</p>
-                            </div>
-                            <h1 class="header_title mx-auto mt-4 mb-0 fw-normal"> Pischon Hôtel : Votre Plateforme Tout-en-Un de Gestion Hôtelière.</h1>
-                            <p class="header_subtitle pt-4 mb-0 pb-2 text-white">Notre application a été conçue pour un pilotage efficace de toutes vos opérations. Elle intègre la gestion des réservations et des finances avec une logistique interne avancée.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="mt-3">
-                            <img src="assets/images/home-sass.png" alt="" class="img-fluid mx-auto d-block">
-                        </div>                                
-                    </div>
-                </div>
+            <div class="about_content mt-4">
+              <h5 class="fw-bold">L'Économat</h5>
+              <div class="text-muted mb-0 mb-4">
+                Le cœur logistique : Gestion centralisée du magasin principal, contrôle des achats fournisseurs et distribution interne maîtrisée vers les services.
+              </div>
             </div>
-        </section>
-        <!--End Home-->
+          </div>
+        </div>
 
-        <!-- Start About -->
-        <section class="section mt-5" id="services">
-            <div class="container">
-                 <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="text-center">
-                            <h3 class="fw-bold">Une Logistique Interne Avancée</h3>
-                            <p class="text-muted">
-                                Notre application couvre : L’Hébergement, La Restauration, la gestion de la piscine, la location des salles, le suivi de matériel et la gestion des stocks.
-                                Nous assurons un contrôle rigoureux, de l'Économat jusqu'à l'alimentation précise des stocks de chaque service. Concentrez-vous sur l'expérience client, nous gérons la complexité.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <!-- Module 2: Restauration -->
+        <div class="col-md-6 col-lg-4">
+          <div class="about_boxes text-center rounded p-4 mb-4">
+            <div class="about_icon">
+              <i class="pe-7s-wine p-icon"></i>
             </div>
-        </section>
-        <!-- End About -->
-
-        <!-- Start Features -->
-        <section class="section bg-light" id="features">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section_title text-center">
-                            <div class="section_title_icon">
-                                <i class="mdi mdi-google-circles-extended"></i>
-                            </div>
-                            <h3 class="mt-3 text-capitalize fw-bold">Les Fonctionnalités Clés de Pischon Hôtel</h3>
-                            <p class="text-muted section_subtitle mx-auto">Notre solution modulaire est conçue pour couvrir l'intégralité du cycle de vie opérationnel et financier de votre établissement. Découvrez comment nos quatre modules principaux travaillent ensemble pour optimiser votre performance.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- L'Économat -->
-                <div class="row mt-5 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="text-center features_img mt-3">
-                            <img src="assets/images/features-1.png" alt="" class="img-fluid mx-auto d-block">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="features_one mt-3">
-                             <h4 class="fw-bold">A. L'Économat (Gestion de la Chaîne d'Approvisionnement Centrale)</h4>
-                            <p class="text-muted">Ce module est le cœur logistique de votre complexe. Il assure une gestion des coûts et des stocks sans faille, de l'achat à la distribution interne.</p>
-                            <ul class="text-muted">
-                                <li><b>Gestion Centralisée du Magasin Principal :</b> Suivi précis des niveaux de stock.</li>
-                                <li><b>Contrôle des Achats :</b> Enregistrement des réceptions, gestion des fournisseurs.</li>
-                                <li><b>Distribution Interne Maîtrisée :</b> Alimentation des services sur la base des expressions de besoin.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- La Restauration -->
-                <div class="row mt-5 align-items-center">
-                    <div class="col-lg-6 order-lg-2">
-                        <div class="text-center features_img mt-3">
-                            <img src="assets/images/features-2.png" alt="" class="img-fluid mx-auto d-block">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 order-lg-1">
-                        <div class="features_one mt-3">
-                            <h4 class="fw-bold">B. La Restauration</h4>
-                            <p class="text-muted">Pilotez l'activité de vos points de vente (Restaurant, Bar, Room Service) avec une solution intégrée à l'Économat.</p>
-                            <ul class="text-muted">
-                                <li><b>Gestion des Commandes et Ventes :</b> Prise de commande rapide et facturation.</li>
-                                <li><b>Inventaire et Stocks Secondaires :</b> Suivi en temps réel des stocks du restaurant.</li>
-                                <li><b>Liaison Client :</b> Transfert des consommations vers la facture de la chambre.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- L’Hébergement -->
-                <div class="row mt-5 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="text-center features_img mt-3">
-                            <img src="assets/images/features-3.png" alt="" class="img-fluid mx-auto d-block">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="features_one mt-3">
-                            <h4 class="fw-bold">C. L’Hébergement</h4>
-                            <p class="text-muted">Le module essentiel pour le suivi de la clientèle, des réservations et de l'occupation.</p>
-                             <ul class="text-muted">
-                                <li><b>Gestion des Réservations :</b> Calendrier interactif et gestion des tarifs.</li>
-                                <li><b>Opérations Front Office :</b> Check-in/Check-out rapides, gestion des profils clients (CRM).</li>
-                                <li><b>Facturation Client :</b> Émission et suivi des factures, gestion des paiements.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Suivi du Matériel -->
-                <div class="row mt-5 align-items-center">
-                     <div class="col-lg-6 order-lg-2">
-                        <div class="text-center features_img mt-3">
-                            <img src="assets/images/features-1.png" alt="" class="img-fluid mx-auto d-block">
-                        </div>
-                    </div>
-                     <div class="col-lg-6 order-lg-1">
-                        <div class="features_one mt-3">
-                            <h4 class="fw-bold">D. Suivi du Matériel (Gestion des Actifs et Maintenance)</h4>
-                            <p class="text-muted">Assurez la longévité de vos équipements et minimisez les temps d'arrêt.</p>
-                            <ul class="text-muted">
-                               <li><b>Inventaire Détaillé :</b> Enregistrement de tous les équipements de l'hôtel.</li>
-                               <li><b>Gestion de la Maintenance :</b> Création et suivi des tickets de maintenance.</li>
-                               <li><b>Historique des Coûts :</b> Suivi des dépenses de réparation pour optimiser les investissements.</li>
-                           </ul>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="about_content mt-4">
+              <h5 class="fw-bold">La Restauration</h5>
+              <div class="text-muted mb-0 mb-4">
+                Pilotez vos points de vente (Bar, Restaurant). Prise de commande rapide, facturation, suivi des stocks secondaires et transfert vers la chambre.
+              </div>
             </div>
-        </section>
-        <!-- End Features -->
+          </div>
+        </div>
 
-        <!-- Start Price -->
-        <!-- <section class="section bg-light" id="price">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section_title text-center">
-                            <div class="section_title_icon">
-                                <i class="mdi mdi-creation"></i>
-                            </div>
-                            <h3 class="mt-3 text-capitalize fw-bold">Nos offres tarifaires</h3>
-                            <p class="text-muted section_subtitle mx-auto">Choisissez le plan qui correspond le mieux à la taille et aux besoins de votre établissement.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-lg-4">
-                        <div class="price_box rounded bg-white mt-3">
-                            <div class="price_name">
-                                <p class="mb-0 fw-bold text-uppercase text-white">Essentiel</p>
-                            </div>
-                            <div class="plan_price pb-4 mt-4">
-                                <h1 class="fw-bold">49€<sub class="text-muted">/Mois</sub></h1>
-                                <p class="text-muted mb-0">Idéal pour les petits hôtels et maisons d'hôtes.</p>
-                            </div>
-                            <div class="price_features text-left mt-4 text-muted">
-                                <p><i class="mdi mdi-adjust text-custom me-1"></i> Jusqu'à <span class="fw-bold text-dark">10</span> chambres</p>
-                                <p><i class="mdi mdi-adjust text-custom me-1"></i> Moteur de réservation</p>
-                                <p><i class="mdi mdi-adjust text-custom me-1"></i> Support par email</p>
-                                <p><i class="mdi mdi-adjust text-custom me-1"></i> Channel Manager (2 canaux)</p>
-                            </div>
-                            <div class="mt-4 text-end">
-                                <a href="javascript:void(0)" class="btn btn-gradient btn-rounded text-white">Choisir ce plan</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="price_box active rounded bg-white mt-3">
-                            <div class="lable">
-                                <h6 class="best mb-0 text-uppercase">Best &nbsp;Plan</h6>
-                            </div>
-                            <div class="price_name">
-                                <p class="mb-0 fw-bold text-uppercase text-white">Professionnel</p>
-                            </div>
-                            <div class="plan_price pb-4 mt-4">
-                                <h1 class="fw-bold">99€<sub class="text-muted">/Mois</sub></h1>
-                                <p class="text-muted mb-0">La solution complète pour les hôtels de taille moyenne.</p>
-                            </div>
-                            <div class="price_features text-left mt-4 text-muted">
-                                <p><i class="mdi mdi-adjust text-custom me-1"></i> Jusqu'à <span class="fw-bold text-dark">50</span> chambres</p>
-                                <p><i class="mdi mdi-adjust text-custom me-1"></i> Moteur de réservation avancé</p>
-                                <p><i class="mdi mdi-adjust text-custom me-1"></i> Support téléphonique</p>
-                                <p><i class="mdi mdi-adjust text-custom me-1"></i> Channel Manager illimité</p>
-                            </div>
-                            <div class="mt-4 text-end">
-                                <a href="javascript:void(0)" class="btn btn-gradient btn-rounded text-white">Choisir ce plan</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="price_box rounded bg-white mt-3">
-                            <div class="price_name">
-                                <p class="mb-0 fw-bold text-uppercase text-white">Entreprise</p>
-                            </div>
-                            <div class="plan_price pb-4 mt-4">
-                                <h1 class="fw-bold">Sur devis<sub class="text-muted"></sub></h1>
-                                <p class="text-muted mb-0">Pour les grands hôtels et les groupes hôteliers.</p>
-                            </div>
-                            <div class="price_features text-left mt-4 text-muted">
-                                <p><i class="mdi mdi-adjust text-custom me-1"></i> Chambres <span class="fw-bold text-dark">illimitées</span></p>
-                                <p><i class="mdi mdi-adjust text-custom me-1"></i> Fonctionnalités sur mesure</p>
-                                <p><i class="mdi mdi-adjust text-custom me-1"></i> Support dédié</p>
-                                <p><i class="mdi mdi-adjust text-custom me-1"></i> Accompagnement personnalisé</p>
-                            </div>
-                            <div class="mt-4 text-end">
-                                <a href="javascript:void(0)" class="btn btn-gradient btn-rounded text-white">Nous contacter</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- Module 3: Hébergement -->
+        <div class="col-md-6 col-lg-4">
+          <div class="about_boxes text-center rounded p-4 mb-4">
+            <div class="about_icon">
+              <i class="pe-7s-home p-icon"></i>
             </div>
-        </section> -->
-        <!-- End Price -->
-
-        <!-- Start Subcribe -->
-        <section class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section_title text-center">
-                            <div class="section_title_icon">
-                                <i class="mdi mdi-progress-download"></i>
-                            </div>
-                            <h3 class="mt-3 text-capitalize fw-bold">Inscrivez-vous à notre newsletter</h3>
-                            <p class="text-muted section_subtitle mx-auto">Recevez nos derniers conseils et actualités sur la gestion hôtelière directement dans votre boîte de réception.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-lg-12">
-                        <div class="text-center subcribe-newslatter mt-3">
-                            <form class="mx-auto position-relative">
-                                <input type="text" placeholder="Email" required>
-                                <button type="submit" class="btn btn-gradient">S'inscrire</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+            <div class="about_content mt-4">
+              <h5 class="fw-bold">L’Hébergement</h5>
+              <div class="text-muted mb-0 mb-4">
+                Gestion complète du cycle client : Réservations, Check-in/Check-out rapides, gestion des profils (CRM) et facturation flexible.
+              </div>
             </div>
-        </section>
-        <!-- End Subcribe -->
+          </div>
+        </div>
 
-        <!-- Start Contact -->
-        <section class="section bg-light" id="download">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section_title text-center">
-                            <div class="section_title_icon">
-                                <i class="mdi mdi-progress-download"></i>
-                            </div>
-                            <h3 class="mt-3 text-capitalize fw-bold">Vous avez des questions ?</h3>
-                            <p class="text-muted section_subtitle mx-auto">Notre équipe est à votre disposition pour répondre à toutes vos questions. N'hésitez pas à nous contacter.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-lg-12">
-                        <div class="mt-3 contact_form bg-gradient mx-auto">
-                            <div id="message"></div>
-                            <form method="post" action="php/contact.php" name="contact-form" id="working_form">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form-group mt-2">
-                                            <label>Nom</label>
-                                            <input name="name" id="name" type="text" class="form-control" placeholder="Votre nom..." required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group mt-2">
-                                            <label>Adresse email</label>
-                                            <input name="email" id="email" type="email" class="form-control" placeholder="Votre email..." required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-group mt-2">
-                                            <label>Sujet</label>
-                                            <input type="text" class="form-control" id="subject" placeholder="Sujet de votre message..." required/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="form-group mt-2">
-                                            <label>Message</label>
-                                            <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Votre message..." required></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12 mt-2 text-end">
-                                        <input type="submit" id="submit" name="send" class="submitBnt btn btn-custom" value="Envoyer le message">
-                                        <div id="simple-msg"></div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+        <!-- Module 4: Suivi Matériel -->
+        <div class="col-md-6 col-lg-4">
+          <div class="about_boxes text-center rounded p-4 mb-4">
+            <div class="about_icon">
+              <i class="pe-7s-tools p-icon"></i>
             </div>
-        </section>
-        <!-- End Contact -->
-
-        <!-- Start Footer -->
-        <footer class="footer pt-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="text-center">
-                            <div class="footer_detail">
-                                <h2 class="footer_logo">P.</h2>
-                                <p class="footer_desc mx-auto mb-0 mt-3">Pischon Hôtel est la solution de gestion hôtelière qui vous aide à automatiser vos tâches quotidiennes et à augmenter vos revenus.</p>
-                                <div class="fot_div"></div>
-                                <div class="mt-4">
-                                    <p class="mb-0 copy-right"> <script>document.write(new Date().getFullYear())</script> &copy; Pischon Hôtel. Développé par
-                                        <a href="#" target="_blank" class="copy-right">Pischon Technologies.</a>
-                                    </p>
-                                    <ul class="list-inline fot_social mt-3">
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="social-icon"><i class="mdi mdi-facebook"></i></a></li>
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="social-icon"><i class="mdi mdi-twitter"></i></a></li>
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="social-icon"><i class="mdi mdi-linkedin"></i></a></li>
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="social-icon"><i class="mdi mdi-google-plus"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="about_content mt-4">
+              <h5 class="fw-bold">Maintenance & Matériel</h5>
+              <div class="text-muted mb-0 mb-4">
+                Inventaire détaillé des actifs, suivi des tickets de maintenance et historique des coûts pour optimiser vos équipements.
+              </div>
             </div>
-        </footer>
-        <!-- End Footer -->
+          </div>
+        </div>
 
-        <!-- Back To Top -->    
-        <a href="#" class="back_top"> <i class="mdi mdi-chevron-up"> </i> </a>
+        <!-- Module 5: Trésorerie (Ajouté pour équilibrer la grille comme sur le modèle) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="about_boxes text-center rounded p-4 mb-4">
+            <div class="about_icon">
+              <i class="pe-7s-cash p-icon"></i>
+            </div>
+            <div class="about_content mt-4">
+              <h5 class="fw-bold">Finance & Trésorerie</h5>
+              <div class="text-muted mb-0 mb-4">
+                Suivez vos recettes et dépenses en temps réel. Génération automatique des rapports financiers et contrôle de caisse.
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <!-- Javascript -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/jquery.easing.min.js"></script>
-        <script src="assets/js/scrollspy.min.js"></script>
+        <!-- Module 6: Statistiques -->
+        <div class="col-md-6 col-lg-4">
+          <div class="about_boxes text-center rounded p-4 mb-4">
+            <div class="about_icon">
+              <i class="pe-7s-graph1 p-icon"></i>
+            </div>
+            <div class="about_content mt-4">
+              <h5 class="fw-bold">Tableaux de Bord</h5>
+              <div class="text-muted mb-0 mb-4">
+                Une vue d'ensemble de votre établissement avec des indicateurs clés de performance (TO, RevPAR) pour des décisions éclairées.
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <!-- Owl Js -->
-        <script src="assets/js/owl.carousel.min.js"></script>
-        
-        <!-- MFP JS -->
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+      </div>
+    </div>
+  </section>
+  <!-- End Features -->
 
-        <!-- CONTACT JS -->
-        <script src="assets/js/contact.js"></script>
+  <!-- Start Subcribe -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section_title text-center">
+            <div class="section_title_icon">
+              <i class="mdi mdi-email-open"></i>
+            </div>
+            <h3 class="mt-3 text-capitalize fw-bold">Inscrivez-vous à notre newsletter</h3>
+            <p class="text-muted section_subtitle mx-auto">Recevez nos derniers conseils et actualités sur la gestion hôtelière directement dans votre boîte de réception.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-12">
+          <div class="text-center subcribe-newslatter mt-3">
+            <form class="mx-auto position-relative">
+              <input type="text" placeholder="Email" required>
+              <button type="submit" class="btn btn-custom">S'inscrire</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Subcribe -->
 
-        <!-- Custom Js   -->
-        <script src="assets/js/custom.js"></script>  
+  <!-- Start Contact -->
+  <section class="section bg-darken" id="download">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section_title text-center">
+            <h3 class="text-uppercase fw-bold">Vous avez des questions ?</h3>
+            <p class="section_subtitle text-white mx-auto">Notre équipe est à votre disposition pour répondre à toutes vos questions. N'hésitez pas à nous contacter.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-12">
+          <div class="contact_form bg-white text-black shadow-lg mx-auto">
+            <div id="message"></div>
+            <form method="post" action="php/contact.php" name="contact-form" id="working_form">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group mt-2">
+                    <label>Nom</label>
+                    <input name="name" id="name" type="text" class="form-control" placeholder="Votre nom..." required>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group mt-2">
+                    <label>Adresse email</label>
+                    <input name="email" id="email" type="email" class="form-control" placeholder="Votre email..." required>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group mt-2">
+                    <label>Sujet</label>
+                    <input type="text" class="form-control" id="subject" placeholder="Sujet de votre message..." required />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="form-group mt-2">
+                    <label>Message</label>
+                    <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Votre message..." required></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 mt-2 text-end">
+                  <input type="submit" id="submit" name="send" class="submitBnt btn btn-custom" value="Envoyer le message">
+                  <div id="simple-msg"></div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact -->
 
-    </body>
+  <!-- Start Footer -->
+  <footer class="footer pt-5 bg-base">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="text-center">
+            <div class="footer_detail">
+              <h2 class="footer_logo text-white">Pischon Hôtel</h2>
+              <p class="footer_desc mx-auto mb-0 mt-3 text-white-50">Pischon Hôtel est la solution de gestion hôtelière qui vous aide à automatiser vos tâches quotidiennes et à augmenter vos revenus.</p>
+              <div class="mt-4 mb-4 border-t"></div>
+              <div class="mt-4">
+                <p class="mb-0 copy-right text-white-50">
+                  <script>
+                    document.write(new Date().getFullYear())
+                  </script> &copy; Pischon Hôtel. Développé par
+                  <a href="#" target="_blank" class="copy-right text-white">Pischon Technologies.</a>
+                </p>
+                <ul class="list-inline fot_social mt-3">
+                  <li class="list-inline-item"><a href="javascript:void(0)" class="social-icon"><i class="mdi mdi-facebook"></i></a></li>
+                  <li class="list-inline-item"><a href="javascript:void(0)" class="social-icon"><i class="mdi mdi-linkedin"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Back To Top -->
+  <a href="#" class="back_top"> <i class="mdi mdi-chevron-up"> </i> </a>
+
+  <!-- Javascript -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery.easing.min.js"></script>
+  <script src="assets/js/scrollspy.min.js"></script>
+
+  <!-- Owl Js -->
+  <script src="assets/js/owl.carousel.min.js"></script>
+
+  <!-- Particles Js (Ajouté pour l'effet Hero) -->
+  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/particles.app.js"></script>
+
+  <!-- MFP JS -->
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+  <!-- CONTACT JS -->
+  <script src="assets/js/contact.js"></script>
+
+  <!-- Custom Js   -->
+  <script src="assets/js/custom.js"></script>
+
+</body>
+
 </html>
