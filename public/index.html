@@ -19,7 +19,7 @@
   <!-- Pe7 Icon -->
   <link rel="stylesheet" type="text/css" href="assets/css/pe-icon-7.css" />
 
-  <!-- STYLES PERSONNALISÉS -->
+  <!-- STYLES PERSONNALISÉS (DESIGN PREMIUM) -->
   <style>
     :root {
       /* Palette de Couleurs "Premium" */
@@ -60,6 +60,22 @@
       position: relative;
       background: linear-gradient(135deg, #0f2c45 0%, #1a4f7a 100%);
       padding: 160px 0 100px 0;
+      overflow: hidden; /* Important pour les particules */
+    }
+    
+    /* Config pour les particules */
+    #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1; /* Derrière le texte */
+    }
+
+    .home-content {
+        position: relative;
+        z-index: 2; /* Devant les particules */
     }
     
     .btn-custom2 {
@@ -169,7 +185,6 @@
           <li class="nav-item"><a href="#download" class="nav-link">Contact</a></li>
         </ul>
         <div>
-          <!-- Bouton démo supprimé, remplacé par Contact -->
           <a href="#download" class="btn btn-custom2 btn-sm">Nous Contacter</a>
         </div>
       </div>
@@ -179,7 +194,11 @@
 
   <!--Start Hero-->
   <section class="home-bg" id="home">
-    <div class="container position-relative z-index">
+    
+    <!-- CONTENEUR DES PARTICULES -->
+    <div id="particles-js"></div> 
+
+    <div class="container position-relative home-content">
       <div class="row">
         <div class="col-lg-10 mx-auto">
           <div class="text-white text-center">
@@ -191,7 +210,6 @@
             </p>
 
             <div class="mt-5 mb-5">
-              <!-- Suppression des boutons d'essai gratuit -->
               <a href="#download" class="btn btn-custom2 fw-bold me-2">Contactez notre équipe</a>
             </div>
             
@@ -242,7 +260,7 @@
           </div>
         </div>
 
-        <!-- Grid Cards (2 colonnes pour bien afficher le texte) -->
+        <!-- Grid Cards -->
         <div class="row g-4">
             
             <!-- Module A: Économat -->
@@ -408,7 +426,11 @@
   <!-- Javascript -->
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Scripts pour les particules -->
   <script src="assets/js/particles.js"></script>
+  <script src="assets/js/particles.app.js"></script>
+  
   <script src="assets/js/custom.js"></script>
 
 </body>
